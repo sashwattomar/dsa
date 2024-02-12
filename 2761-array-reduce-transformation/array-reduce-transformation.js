@@ -5,11 +5,10 @@
  * @return {number}
  */
 var reduce = function(nums, fn, init) {
-    let ans = init;
+    let ans= init;
     nums.forEach((item)=>{
-        const reducedAns = fn(ans,item);
-        ans = reducedAns;
-        init = reducedAns;
+      ans = fn(ans,item);
+       
     })
     return ans;
 };
