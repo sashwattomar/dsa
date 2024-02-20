@@ -7,7 +7,7 @@ public:
         }
 
 
-    long long mid  = si+((ei-si)%2);
+    int mid  = si+((ei-si)%2);
 
     if( nums[mid] == target ) {
         return mid;
