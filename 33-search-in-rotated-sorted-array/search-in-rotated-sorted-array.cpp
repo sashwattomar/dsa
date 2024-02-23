@@ -5,7 +5,7 @@ public:
             return -1;
         }
 
-        int mid = (si + ei) / 2;
+        int mid  = si+((ei-si)%2);
 
         if (nums[mid] == target) {
             return mid;
