@@ -25,6 +25,7 @@ public:
                 min = nums[mid+1];
            }
            binarySearch(nums, min, si, mid - 1);
+           return;
         }
     }
 
